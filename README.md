@@ -15,13 +15,13 @@ On the NeoPixel FeatherWing you need DIN, VUSB and Ground
 
 ![Featherwing Pinout](./img/featherwing_pinout.png)
 
- Connect the following pins:
+ Connect the following pins (RPi to Featherwing):
 
 	+ GPIO 18 to DIN
 	+ 5V Power to  VUSB
 	+ Ground to Ground
 
-![Final](./img/final.png)
+![Final](./img/final_wiring.png)
 
 
 **And now, the code!**
