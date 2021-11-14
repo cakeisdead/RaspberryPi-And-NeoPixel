@@ -6,13 +6,14 @@ This is a mini guide on how to use Adafruit’s NeoPixel FeatherWing with a Rasp
 
 **Pinout and Wiring**
 
+
 From the PI you will need GPIO 18, 5V Power and Ground
 
-![RaspberryPi Pinout](./img/RPBPI Pinout.png)
+![RaspberryPi Pinout](./img/rpi_pinout.png)
 
 On the NeoPixel FeatherWing you need DIN, VUSB and Ground
 
-![Featherwing Pinout](./img/RPBPI Pinout.png)
+![Featherwing Pinout](./img/featherwing_pinout.png)
 
  Connect the following pins:
 
@@ -20,10 +21,11 @@ On the NeoPixel FeatherWing you need DIN, VUSB and Ground
 	+ 5V Power to  VUSB
 	+ Ground to Ground
 
-![Final](./img/Final.png)
+![Final](./img/final.png)
 
 
 **And now, the code!**
+
 
 We will be using Python to interact with the FeatherWing, so first you need to do is install the following libraries:
 
@@ -80,6 +82,7 @@ Or light up individual LEDs by referencing their positions:
 	fw.show()
 ```
 
+See _featherWingTest.py_ for a demo implementation of this mini guide.
 
 
 > References
