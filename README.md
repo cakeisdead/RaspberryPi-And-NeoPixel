@@ -50,14 +50,14 @@ According to the documentation, to initialize a NeoPixel object we need to pass 
 
 ```
 	# FeatherWing Setup
-	led_count = 32
-	data_pin = board.D18
-	led_brightness = 1  
-	aw = False      
-	color_order = neopixel.RGB
+	LED_COUNT = 32
+	DATA_PIN = board.D18
+	LED_BRIGHTNESS = 1  
+	AW = False      
+	COLOR_ORDER = neopixel.RGB
 
 	# FeatherWing Initialization
-	fw = neopixel.NeoPixel(data_pin, led_count, brightness = led_brightness, auto_write=False, pixel_order = color_order)
+	fw = neopixel.NeoPixel(DATA_PIN, LED_COUNT, brightness = LED_BRIGHTNESS, auto_write=AW, pixel_order = COLOR_ORDER)
 ```
 
 

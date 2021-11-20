@@ -18,7 +18,7 @@ color_final = (235,106,71)
 fw = neopixel.NeoPixel(DATA_PIN, LED_COUNT, brightness = LED_BRIGHTNESS, auto_write=AW, pixel_order = COLOR_ORDER)
 
 
-def putPixel(position, color):
+def put_pixel(position, color):
     fw[position] = color
     fw.show()
 
@@ -26,8 +26,8 @@ final = LED_COUNT
 
 while final >= 0:
     for led in range(final):
-        putPixel(led,color_moving)
+        put_pixel(led,color_moving)
         time.sleep(0.1)
-        putPixel(led,color_none)
-    putPixel(final-1, color_final)
+        put_pixel(led,color_none)
+    put_pixel(final-1, color_final)
     final -= 1
